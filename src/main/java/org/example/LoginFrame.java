@@ -69,7 +69,6 @@ public class LoginFrame extends JFrame implements ActionListener {
                 JSONObject jsonResponse = new JSONObject(response);
                 String authToken = jsonResponse.getString("token");
                 String urlScreenshot = "http://"+ip+":8080/api/screenshot";
-
                 JFrame frame = new JFrame("Image Display");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setContentPane(new ImageDisplay(authToken,urlScreenshot));

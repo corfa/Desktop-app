@@ -13,7 +13,7 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 
 public class ImageDisplay extends JPanel {
-   // private static final String SERVICE_URL = "http://localhost:8080/api/screenshot";
+
     private final String SERVICE_URL;
     private final String token;
     private Image image;
@@ -24,9 +24,6 @@ public class ImageDisplay extends JPanel {
         this.token = token;
         this.SERVICE_URL = SERVICE_URL;
         setPreferredSize(new Dimension(640, 480));
-//        updateButton = new JButton("Update");
-//        updateButton.addActionListener(e -> updateImage());
-//        add(updateButton);
         updateImage();
         timer = new Timer(1000, e -> {
             updateImage();

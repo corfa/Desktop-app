@@ -45,7 +45,6 @@ public class LoginFrame extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        // Получаем логин, пароль и IP-адрес из полей формы
         String login = loginField.getText();
         String password = new String(passwordField.getPassword());
         String ip = ipField.getText();
